@@ -1,0 +1,12 @@
+python train.py --gpu-id 0 \
+                --loss PPGML_PA \
+                --model bn_inception \
+                --embedding-size 512 \
+                --batch-size 180 \
+                --lr 1e-4 \
+                --warm 1 \
+                --bn-freeze 0 \
+                --dataset SOP \
+                --lr-decay-step 20 \
+                --lr-decay-gamma 0.25 \
+				--epochs 100

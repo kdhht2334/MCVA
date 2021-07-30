@@ -1,0 +1,13 @@
+python train.py --gpu-id 0 \
+                --loss PPGML_PA \
+                --model bn_inception \
+                --embedding-size 512 \
+                --batch-size 180 \
+				--epochs 100 \
+                --lr 1e-4 \
+                --dataset cars \
+                --warm 1 \
+                --bn-freeze 1 \
+                --lr-decay-step 20 \
+				--lr-decay-gamma 0.5 \
+				--optimizer adamw
