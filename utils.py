@@ -1,12 +1,7 @@
 import numpy as np
 import torch
-import logging
-import losses_aaai2021 as losses
-#import losses_cvpr2021 as losses
-import json
 from tqdm import tqdm
 import torch.nn.functional as F
-import math
 
 
 def l2_norm(input):
